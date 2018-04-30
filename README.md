@@ -1,7 +1,5 @@
 # vue-muti
 
-> A Vue.js project
-
 ## Build Setup
 
 ``` bash
@@ -18,4 +16,11 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### 基于vue-cli配置的多页应用
+
+* npm run dev
+
+* localhost:8080/index.html
+
+* localhost:8080/other.html
+
