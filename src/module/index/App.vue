@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <a href="other.html">123</a>
+    <a href="other.html">我是罗dd2rrrggg</a>
     <img src="./../../assets/logo.png">
     <HelloWorld/>
   </div>
@@ -24,6 +24,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
 </style>

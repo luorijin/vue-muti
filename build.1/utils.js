@@ -12,16 +12,11 @@ exports.assetsPath = function (_path) {
 
   return path.posix.join(assetsSubDirectory, _path)
 }
-exports.getBaseName=function(entry){
-  let reg=/module\/(.+)(.html|.js)/;
-  var matchs=entry.match(reg);
-  return matchs[1];
-}
 exports.getEntrysAndTemp = function(globpath){
     let entrys={};
     let temps={};
     glob.sync(globpath).forEach(function(entry){
-        let basename=exports.getBaseName(entry);
+        let basename=path.basename(entry, path.extname(entry));
         entrys[basename]=entry;
         temps[basename]=entry.replace(/\.js/,'.html');
     })
