@@ -20,7 +20,7 @@ npm run build --report
 
 * npm run dev
 
-* localhost:8080/index.html
+* localhost:8080/index/index.html
 
-* localhost:8080/other.html
+* localhost:8080/other/other.html
 
