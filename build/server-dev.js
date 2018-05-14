@@ -1,8 +1,8 @@
 'use strict'
 const utils = require('./utils')
-const webpack = require('webpack')
+const webpack = require('webpack2')
 const MultiEntryPlugin = require('webpack/lib/MultiEntryPlugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin2')
 const config = require('../config')
 const merge = require('webpack-merge')
 const path = require('path')
