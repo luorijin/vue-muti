@@ -101,6 +101,7 @@ const reBuild=function(type,rpath,compiler,server){
         var jspath=path.join(`${dirname}`,`${path.basename(basename)}.js`);
         var htmlpath=path.join(`${dirname}`,`${path.basename(basename)}.html`);
         if(!entrys[basename]&&fs.existsSync(jspath)&&fs.existsSync(htmlpath)){
+          console.log('\x1B[36m%s\x1B[0m',`\n添加模块==${basename}.html`)
           var config={},configEntry=config.entry={};configEntry[basename]=jspath;
           //热加载入口处理
           WebpackDevServer.addDevServerEntrypoints(config, devServer);
