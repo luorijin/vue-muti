@@ -1,5 +1,6 @@
 'use strict'
 const utils = require('./utils')
+const compilerPlugin=require('./compilerPlugin');
 const webpack = require('webpack2')
 const MultiEntryPlugin = require('webpack/lib/MultiEntryPlugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin2')
@@ -47,6 +48,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 
   // these devServer options should be customized in /config/index.js
   plugins: [
+    new compilerPlugin(),
     new webpack.DefinePlugin({
       'process.env': require('../config/dev.env')
     }),
